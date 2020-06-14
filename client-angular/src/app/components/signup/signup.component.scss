@@ -1,0 +1,22 @@
+.sign-bg {
+    background-image: url('./../../../assets/rock-192989.jpg');
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+a {
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        margin-top: 20px;
+    }
+}

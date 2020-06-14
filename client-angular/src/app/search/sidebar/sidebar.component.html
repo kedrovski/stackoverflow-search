@@ -1,0 +1,34 @@
+<div class="sidebar-bg">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="fast-sidebar" *ngIf="isVisible">
+                <div class="close-sidebar" (click)="closeSidebar()"><i class="fa fa-close"></i></div>
+                <span><i class="fa fa-bar-chart-o"></i> Quick access panel</span>
+                <div class="table-scroll">
+                    <table class="table table-striped">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Author</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Answers</th>
+                                <th scope="col">Tags</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of sidebarItems">
+                                <td class="text-hover">{{item.owner.display_name}}</td>
+                                <td class="text-hover">{{item.title}}</td>
+                                <td class="text-hover">{{item.answer_count}}</td>
+                                <td>
+                                    <ul>
+                                        <li *ngFor="let tag of item.tags">{{tag}}</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

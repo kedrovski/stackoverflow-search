@@ -1,0 +1,49 @@
+.result-bg {
+    background-image: url('./../../../assets/wood-1108307_1920.jpg');
+    height: 100%;
+    width: 100%;
+
+    .table-scroll {
+        margin-top: 50px;
+        height: 75vh;
+        overflow-y: auto;
+    }
+
+    table {
+        background-color: white;
+    }
+
+    .table td.text-hover:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .table td li:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .table td ul {
+        padding-left: 15px;
+    }
+
+    .avatar {
+        height: 70px;
+        width: 70px;
+        border-radius: 4px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .author {
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .result-bg .table-scroll {
+        margin-top: 20px;
+        height: 75vh;
+        overflow-y: auto;
+    }
+}

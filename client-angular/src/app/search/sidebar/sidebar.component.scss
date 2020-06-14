@@ -1,0 +1,71 @@
+.sidebar-bg {
+    height: 100%;
+    width: 100%;
+    
+    .fast-sidebar {
+        height: calc(100vh - 56px - 64px);
+        width: 50%;
+        border: 2px solid #ff9800;
+        border-radius: 4px;
+        padding: 10px;
+        position: absolute;
+        background-color: white;
+        top: 56px;
+        right: 0;
+        z-index: 99999;
+
+        span {
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        .close-sidebar {
+            color: gray;
+            font-size: 1.5rem;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            cursor: pointer;
+        }
+        
+        .close-sidebar:hover {
+            color: blue;
+        }
+
+        .table-scroll {
+            margin-top: 20px;
+            height: 75vh;
+            overflow-y: auto;
+        }
+    
+        table {
+            background-color: white;
+        }
+    
+        .table td.text-hover:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    
+        .table td li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    
+        .table td ul {
+            padding-left: 15px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .fast-sidebar {
+            height: calc(100vh - 56px - 50px);
+            width: 100%;
+            
+            .table-scroll {
+                height: 72vh;
+            }
+        }
+    }
+
+}

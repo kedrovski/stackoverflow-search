@@ -1,0 +1,17 @@
+<div class="opacity-bg" style="opacity: 0.15;"></div>
+<div class="container-fluid find-bg">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="search-block">
+                <h4>Search among millions of questions and answers</h4>
+                <div class="input-group mb-1 mt-3">
+                    <input #queryInput type="text" class="form-control" placeholder="Please enter your question" aria-describedby="button-addon2" autofocus (keyup.enter)="find(queryInput.value)">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="button-addon2" (click)="find(queryInput.value)">Find now</button>
+                    </div>
+                </div>
+                <p>Popular questions: angular 9, nodejs, nginx, fix coronavirus</p>
+            </div>
+        </div>
+    </div>
+</div>

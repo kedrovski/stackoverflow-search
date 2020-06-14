@@ -1,0 +1,28 @@
+.find-bg {
+    background-image: url('./../../../assets/wood-1108307_1920.jpg');
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+    .search-block {
+        margin-top: 200px;
+
+        h4 {
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px black;
+        }
+        p {
+            color: white;
+            margin-top: 0px;
+            font-weight: 600;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.644);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .search-block {
+        margin-top: 20px;
+    }
+}

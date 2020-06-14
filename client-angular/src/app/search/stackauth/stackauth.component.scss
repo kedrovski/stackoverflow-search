@@ -1,0 +1,23 @@
+.bg-auth {
+    background-color: #f8f9fa;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    .loading {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        color: #FF9800;
+
+        .fa {
+            font-size: 50px;
+        }
+    }
+}

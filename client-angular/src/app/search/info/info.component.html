@@ -1,0 +1,25 @@
+<div class="info-bg">
+    <div class="container-fluid">
+        <div class="row">
+            <span class="back-btn" (click)="back()"><i class="fa fa-chevron-left"></i> Back</span>
+            <div class="col-md-10 col-xl-8 mx-auto">
+                <div class="question-info">
+                    <h4>{{answersData.title}}</h4>
+                    <span [innerHtml]="answersData.body"></span>
+                </div>
+
+                <div class="answers-info" *ngFor="let answer of answersData.answers">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="avatar" [src]="answersData.owner.profile_image">
+                            <p>{{answersData.owner.display_name}}</p>
+                        </div>
+                        <div class="col-md-10">
+                            <span [innerHtml]="answer.body"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

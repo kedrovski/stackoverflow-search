@@ -1,0 +1,60 @@
+.info-bg {
+    background-image: url('./../../../assets/hardwood-1846842_1920.jpg');
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+
+    .question-info {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        background-color: white;
+        border: 2px solid gray;
+        border-radius: 4px;
+        padding: 15px;
+
+        h4 {
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: #222222;
+        }
+    }
+
+    .answers-info {
+        margin-bottom: 30px;
+        background-color: white;
+        border-radius: 4px;
+        padding: 15px;
+
+        p {
+            color: #222222;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .avatar {
+            width: 100%;
+        }
+
+        p {
+            margin-top: 1rem;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .answers-info {
+        img {
+            width: 100px !important;
+        }
+
+        p {
+            text-align: left !important;
+        }
+    }
+}
