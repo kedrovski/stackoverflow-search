@@ -17,7 +17,7 @@
     "debug": "^2.2.0",
     "express": "~4.9.8",
     "fs-extra": "^8.0.1",
-    "ftp-srv": "^4.3.0",
+    "ftp-srv": "^4.3.4",
     "ftpd": "git+https://github.com/nodeftpd/nodeftpd.git",
     "http": "0.0.0",
     "jwt-simple": "^0.3.1",
