@@ -10,7 +10,7 @@
     "name": "Ruslan Kedrovski"
   },
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "body-parser": "~1.9.2",
     "bunyan": "^1.8.12",
     "cors": "*",
